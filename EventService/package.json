@@ -1,0 +1,18 @@
+{
+  "name": "eventservice",
+  "version": "1.0.0",
+  "description": "Event Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ranier De Leon",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.18",
+    "nodemon": "^1.17.4",
+    "randomstring": "^1.1.5"
+  }
+}
