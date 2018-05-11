@@ -20,4 +20,17 @@ module.exports = function(app) {
     app.route('/update-question')
         .post(eventController.updateQuestion);
 
+    app.route('/toggle-good-question')
+        .put(eventController.addGoodQuestion)
+        .delete(eventController.removeGoodQuestion);
+
+    app.route('/join')
+        .post(eventController.join);
+
+    app.route('/verify')
+        .post(eventController.verify);
+
+    app.route('/logout')
+        .post(eventController.logout);
+
 };

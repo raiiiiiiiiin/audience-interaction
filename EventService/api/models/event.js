@@ -30,7 +30,13 @@ var EventSchema = new mongoose.Schema({
     },
     questions:  [{
         type: mongoose.Schema.Types.ObjectId, ref: 'Question'
-    }]
+    }],
+    goodQuestions: {
+        type: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Question'
+        }]
+    }
 });
 
 EventSchema.statics.addQuestion = function addQuestion(urlId, question, callback) {
@@ -77,7 +83,7 @@ EventSchema.pre('save', function(next) {
     var event = this;
     event.createdDate = new Date();
 
-    event.urlId = getUrlId();
+    event.urlId = getUrlId().toLowerCase();
     event.questions = [{}];
 
     next();
