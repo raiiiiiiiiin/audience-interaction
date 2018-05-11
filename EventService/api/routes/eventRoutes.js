@@ -33,4 +33,8 @@ module.exports = function(app) {
     app.route('/logout')
         .post(eventController.logout);
 
+    app.route('/like')
+        .put(eventController.likeQuestion)
+        .delete(eventController.unlikeQuestion);
+
 };

@@ -100,9 +100,6 @@ exports.addGoodQuestion = function(req, res) {
                 }
 
         });
-
-
-
     } else {
         res.json({error:'Invalid parameters.'});
     }
@@ -166,7 +163,7 @@ exports.verify = function(req, res, next) {
     }
 };
 
-exports.logout = function(req, res, next) {
+exports.logout = function(req, res) {
     if (req.session) {
         req.session.destroy(function(err) {
             if (err) {
@@ -175,5 +172,31 @@ exports.logout = function(req, res, next) {
                 return res.send('log out success');
             }
         });
+    }
+};
+
+exports.likeQuestion = function(req, res) {
+    if (req.body._id) {
+        Question.like(req.body._id, req.session.id,
+            function(err, data) {
+                if (err) {
+                    return next(err);
+                } else {
+                    return res.send('like success');
+                }
+            });
+    }
+};
+
+exports.unlikeQuestion = function(req, res) {
+    if (req.body._id) {
+        Question.unlike(req.body._id, req.session.id,
+            function(err, data) {
+                if (err) {
+                    return next(err);
+                } else {
+                    return res.send('unlike success');
+                }
+            });
     }
 };
