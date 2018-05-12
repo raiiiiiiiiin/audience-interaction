@@ -28,14 +28,12 @@ exports.login = function(req, res){
     request(getAdminServerOptions('login', req), function (error, response) {
         if (response && response.body) {
             var jsonBody = JSON.parse(response.body);
-            if (!jsonBody.isValid) {
-                res.json(JSON.parse(response.body));
-            } else {
+            if (jsonBody.isValid) {
                 req.session.adminLoggedIn = true;
-                res.json(JSON.parse(response.body));
             }
+            res.json(JSON.parse(response.body));
         } else {
-            res.status(400).json({error:"error"});
+            res.status(400).json({isValid:false, error:"error"});
         }
 
     });
@@ -79,11 +77,15 @@ exports.toggleGoodQuestion = function(req, res) {
 
 exports.join = function(req, res) {
     request(getEventServerOptions("join", req), function(err, response) {
-        if (response.statusCode !== 200) {
+        console.log(response);
+        if (response && response.body) {
+            var jsonBody = JSON.parse(response.body);
+            if (jsonBody.isValid) {
+                req.session.urlId = JSON.parse(response.body).urlId;
+            }
             res.json(JSON.parse(response.body));
         } else {
-            req.session.urlId = JSON.parse(response.body).urlId;
-            res.json(JSON.parse(response.body));
+            res.status(400).json({isValid:false, error:"error"});
         }
     });
 };

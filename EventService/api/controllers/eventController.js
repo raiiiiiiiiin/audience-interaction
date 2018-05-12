@@ -124,17 +124,16 @@ exports.join = function(req, res) {
     if (req.body.code) {
         Event.findOne({code:req.body.code})
             .exec(function(err, data) {
-                console.log(err, data);
                 if (err || !data)
-                    res.status(500).json({isValid: 'false', 'error' : 'Invalid code.'});
-
-                var currentDate = new Date();
-                if (data.startPeriod < currentDate && currentDate < data.endPeriod) {
-                    res.json({isValid: 'true', urlId: data.urlId});
-                } else {
-                    res.status(500).json({isValid: 'false', 'error' : 'Event time do not match.'});
+                    res.json({isValid: false, 'error' : 'Invalid code.'});
+                else {
+                    var currentDate = new Date();
+                    if (data.startPeriod < currentDate && currentDate < data.endPeriod) {
+                        res.json({isValid: true, urlId: data.urlId});
+                    } else {
+                        res.json({isValid: false, 'error' : 'Event time do not match.'});
+                    }
                 }
-
             });
     } else {
         res.json({error:'Invalid parameters.'});

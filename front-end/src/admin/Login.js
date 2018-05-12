@@ -45,7 +45,6 @@ class Login extends Component {
             return;
         }
 
-        var self = this;
         var payload={
             "logEmail":this.state.email,
             "logPassword":this.state.password
