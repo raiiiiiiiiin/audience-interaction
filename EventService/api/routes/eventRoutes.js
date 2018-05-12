@@ -27,12 +27,6 @@ module.exports = function(app) {
     app.route('/join')
         .post(eventController.join);
 
-    app.route('/verify')
-        .post(eventController.verify);
-
-    app.route('/logout')
-        .post(eventController.logout);
-
     app.route('/like')
         .put(eventController.likeQuestion)
         .delete(eventController.unlikeQuestion);

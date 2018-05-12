@@ -4,28 +4,14 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
     Question = require('./api/models/question'),
-    Event = require('./api/models/event'),
-    session = require('express-session'),
-    MongoStore = require('connect-mongo')(session);
+    Event = require('./api/models/event');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/event');
 
-var db = mongoose.connection;
-
-app.use(session({
-    secret: 'work hard',
-    resave: true,
-    saveUninitialized: false,
-    store: new MongoStore({
-        mongooseConnection: db
-    })
-}));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
 
 var routes = require('./api/routes/eventRoutes');
 routes(app);

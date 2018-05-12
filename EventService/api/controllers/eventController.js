@@ -9,7 +9,7 @@ exports.addEvent = function(req, res) {
 
     new_event.save(function(err, event) {
         if (err) {
-            res.send(err);
+            res.status(400).send(err);
         }
         res.json(event);
     });
@@ -126,58 +126,24 @@ exports.join = function(req, res) {
             .exec(function(err, data) {
                 console.log(err, data);
                 if (err || !data)
-                    return res.status(500).json({'error' : 'Invalid code.'});
+                    res.status(500).json({isValid: 'false', 'error' : 'Invalid code.'});
 
                 var currentDate = new Date();
                 if (data.startPeriod < currentDate && currentDate < data.endPeriod) {
-                    req.session.urlId = data.urlId;
-                    res.send('log in success');
+                    res.json({isValid: 'true', urlId: data.urlId});
                 } else {
-                    return res.status(500).json({'error' : 'Event time do not match.'});
+                    res.status(500).json({isValid: 'false', 'error' : 'Event time do not match.'});
                 }
 
             });
     } else {
         res.json({error:'Invalid parameters.'});
-    }
-};
-
-exports.verify = function(req, res, next) {
-    if (req.body.urlId) {
-        Event.findOne({urlId:req.session.urlId})
-            .exec(function (error, data) {
-                if (error) {
-                    return next(error);
-                } else {
-                    if (data === null || req.session.urlId !== req.body.urlId) {
-                        var err = new Error('Not authorized! Go back!');
-                        err.status = 400;
-                        res.json({isValid:false});
-                    } else {
-                        res.json({isValid:true});
-                    }
-                }
-            });
-    } else {
-        res.json({error:'Invalid parameters.'});
-    }
-};
-
-exports.logout = function(req, res) {
-    if (req.session) {
-        req.session.destroy(function(err) {
-            if (err) {
-                return next(err);
-            } else {
-                return res.send('log out success');
-            }
-        });
     }
 };
 
 exports.likeQuestion = function(req, res) {
     if (req.body._id) {
-        Question.like(req.body._id, req.session.id,
+        Question.like(req.body._id, req.body.sessionId,
             function(err, data) {
                 if (err) {
                     return next(err);
@@ -190,7 +156,7 @@ exports.likeQuestion = function(req, res) {
 
 exports.unlikeQuestion = function(req, res) {
     if (req.body._id) {
-        Question.unlike(req.body._id, req.session.id,
+        Question.unlike(req.body._id, req.body.sessionId,
             function(err, data) {
                 if (err) {
                     return next(err);
