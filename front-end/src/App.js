@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import './App.css';
 import LoginScreen from './admin/LoginScreen';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./audience/Home";
+import Events from "./admin/Events";
 
 injectTapEventPlugin();
 class App extends Component {
@@ -22,8 +25,13 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.state.loginPage}
-                {this.state.eventsScreen}
+                <Router >
+                    <div>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/admin" component={LoginScreen} />
+                        <Route path="/events" component={Events} />
+                    </div>
+                </Router>
             </div>
         );
     }

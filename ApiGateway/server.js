@@ -4,7 +4,8 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
-    MongoStore = require('connect-mongo')(session);
+    MongoStore = require('connect-mongo')(session),
+    cors = require('cors');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -23,28 +24,11 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-// Add headers
-app.use(function (req, res, next) {
-
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
-
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-    // Request headers you wish to allow
-    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-
-    // Set to true if you need the website to include cookies in the requests sent
-    // to the API (e.g. in case you use sessions)
-    res.setHeader('Access-Control-Allow-Credentials', true);
-
-    if (req.method === "OPTIONS")
-        res.sendStatus(200);
-    else
-        next();
-
-});
+app.use(cors({
+    origin:['http://localhost:3002'],
+    methods:['GET','POST'],
+    credentials: true // enable set cookie
+}));
 
 var routes = require('./api/routes/gatewayRoute');
 routes(app);

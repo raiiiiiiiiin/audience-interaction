@@ -3,17 +3,26 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
-import Events from './Events';
 import { API_ROOT } from '../util/api-config.js';
 import axios from 'axios';
+import { withRouter } from 'react-router';
+import PropTypes from 'prop-types';
+
+axios.defaults.withCredentials = true;
 
 class Login extends Component {
+
+    static propTypes = {
+        match: PropTypes.object.isRequired,
+        location: PropTypes.object.isRequired,
+        history: PropTypes.object.isRequired
+    }
 
     constructor(props){
         super(props);
         this.state={
-            email:'',
-            password:'',
+            email:'ranier@bandboo.co',
+            password:'password',
             requiredEmail: false,
             requiredPassword: false
         }
@@ -31,7 +40,7 @@ class Login extends Component {
         return isValid;
     }
 
-    handleClick(event){
+    handleClick = (props) =>{
         if (this.validateEmail() || this.validatePassword()) {
             return;
         }
@@ -44,10 +53,10 @@ class Login extends Component {
         axios.post(API_ROOT+'/login', payload)
             .then(function (response) {
                 if(response.data.isValid){
+                    const{history} = props;
                     console.log("Login successful");
-                    var eventsScreen=[];
-                    eventsScreen.push(<Events key={0} appContext={self.props.appContext}/>)
-                    self.props.appContext.setState({loginPage:[],eventsScreen:eventsScreen})
+                    history.push('/events');
+
                 }
                 else{
                     alert(response.data.error);
@@ -66,6 +75,7 @@ class Login extends Component {
                     <div>
                         <AppBar
                             title="Login"
+                            showMenuIconButton={false}
                         />
                         <TextField
                             hintText="Enter your email"
@@ -90,7 +100,7 @@ class Login extends Component {
                             }}
                         />
                         <br/>
-                        <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                        <RaisedButton label="Submit" primary={true} style={style} onClick={() => this.handleClick(this.props)}/>
                     </div>
                 </MuiThemeProvider>
             </div>
@@ -101,4 +111,4 @@ const style = {
     margin: 15,
 };
 
-export default Login;
+export default withRouter(Login);

@@ -5,10 +5,19 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import axios from 'axios';
 import { API_ROOT } from '../util/api-config.js';
-import Login from "./Login";
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 
+axios.defaults.withCredentials = true;
 
 class Register extends Component {
+
+    static propTypes = {
+        match: PropTypes.object.isRequired,
+        location: PropTypes.object.isRequired,
+        history: PropTypes.object.isRequired
+    }
+
     constructor(props){
         super(props);
         this.state={
@@ -26,25 +35,16 @@ class Register extends Component {
             return;
         }
 
-        var self = this;
         var payload={
             "email":this.state.email,
             "password":this.state.password,
             "passwordConf":this.state.passwordConf
         }
         axios.post(API_ROOT+'/login', payload)
-            .then(function (response) {
+            .then((response) => {
                 console.log(response);
                 if(response.data.isValid){
-                    //  console.log("registration successfull");
-                    var loginscreen=[];
-                    loginscreen.push(<Login key={0} parentContext={this}/>);
-                    var loginmessage = "Not Registered yet.Go to registration";
-                    self.props.parentContext.setState({loginscreen:loginscreen,
-                        loginmessage:loginmessage,
-                        buttonLabel:"Register",
-                        isLogin:true
-                    });
+                    this.props.history.push('/events');
                 } else{
                     alert(response.data.error);
                 }
@@ -80,6 +80,7 @@ class Register extends Component {
                     <div>
                         <AppBar
                             title="Register"
+                            showMenuIconButton={false}
                         />
                         <TextField
                             hintText="Enter your Email"
@@ -127,4 +128,4 @@ class Register extends Component {
 const style = {
     margin: 15,
 };
-export default Register;
+export default withRouter(Register);

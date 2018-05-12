@@ -3,6 +3,7 @@ module.exports = function(app) {
     var gatewayController = require("../controllers/gatewayController");
 
     var verifyAdminLogged = function(req, res, next) {
+        console.log(req.session.id);
         if (req.session.adminLoggedIn) {
             next();
         } else {
