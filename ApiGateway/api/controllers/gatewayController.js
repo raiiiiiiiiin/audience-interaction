@@ -25,14 +25,19 @@ var getServerOptions = function(service, endpoint, req) {
 };
 
 exports.login = function(req, res){
-    console.log(req.session.id);
     request(getAdminServerOptions('login', req), function (error, response) {
-        if (response.statusCode !== 200) {
-            res.json(JSON.parse(response.body));
+        if (response && response.body) {
+            var jsonBody = JSON.parse(response.body);
+            if (!jsonBody.isValid) {
+                res.json(JSON.parse(response.body));
+            } else {
+                req.session.adminLoggedIn = true;
+                res.json(JSON.parse(response.body));
+            }
         } else {
-            req.session.adminLoggedIn = true;
-            res.json(JSON.parse(response.body));
+            res.status(400).json({error:"error"});
         }
+
     });
 };
 
@@ -40,9 +45,9 @@ exports.logout = function(req, res, next) {
     if (req.session) {
         req.session.destroy(function(err) {
             if (err) {
-                return next(err);
+                next(err);
             } else {
-                return res.send('log out success');
+                res.send('log out success');
             }
         });
     }
