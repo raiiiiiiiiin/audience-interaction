@@ -37,6 +37,8 @@ module.exports = function(app) {
         .delete(verifyAdminLogged, gatewayController.toggleGoodQuestion);
     app.route('/join')
         .post(gatewayController.join);
+    app.route('/event')
+        .post(verifyEventJoined, gatewayController.eventWithQuestions);
     app.route('/add-question')
         .post(verifyEventJoined, gatewayController.addQuestion);
     app.route('/like')

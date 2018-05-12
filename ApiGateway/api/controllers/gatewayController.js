@@ -101,3 +101,9 @@ exports.getEvents = function(req,res) {
         res.json(JSON.parse(response.body));
     });
 };
+
+exports.eventWithQuestions = function(req, res) {
+    request(getEventServerOptions("get-event-with-questions", req), function(err, response) {
+        res.json(JSON.parse(response.body));
+    });
+};

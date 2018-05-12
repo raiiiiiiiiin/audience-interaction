@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f014a2e-e708-4793-ac1a-f4389bbb955f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiGateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminService/api/controllers/adminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminService/api/controllers/adminController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminService/api/routes/adminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminService/api/routes/adminRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminService/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminService/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminService/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminService/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventService/api/controllers/eventController.js" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/api/controllers/eventController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventService/api/routes/eventRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/api/routes/eventRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventService/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventService/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventService/api/models/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/api/models/question.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EventService/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdminService/api/models/admin.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EventService/package.json">
+      <file leaf-file-name="event.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -65,8 +55,8 @@
       <file leaf-file-name="eventRoutes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventService/api/routes/eventRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="150">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -74,8 +64,8 @@
       <file leaf-file-name="eventController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventService/api/controllers/eventController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="145" column="54" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="54" />
+            <state relative-caret-position="201">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -83,8 +73,8 @@
       <file leaf-file-name="gatewayController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+            <state relative-caret-position="253">
+              <caret line="86" column="81" lean-forward="true" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -101,8 +91,8 @@
       <file leaf-file-name="gatewayRoute.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+            <state relative-caret-position="482">
+              <caret line="40" column="69" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -146,6 +136,7 @@
       <find>options.key || 'connect.sid'</find>
       <find>logout</find>
       <find>statuscode</find>
+      <find>get-event-with-questions</find>
       <find>session</find>
     </findStrings>
   </component>
@@ -160,7 +151,6 @@
         <option value="$PROJECT_DIR$/AdminService/schema/admin.js" />
         <option value="$PROJECT_DIR$/AdminService/api/models/admin.js" />
         <option value="$PROJECT_DIR$/EventService/api/models/event.js" />
-        <option value="$PROJECT_DIR$/EventService/api/models/question.js" />
         <option value="$PROJECT_DIR$/ApiGateway/api/server.js" />
         <option value="$PROJECT_DIR$/ApiGateway/api/gatewayController.js" />
         <option value="$PROJECT_DIR$/ApiGateway/package.json" />
@@ -173,6 +163,7 @@
         <option value="$PROJECT_DIR$/ApiGateway/server.js" />
         <option value="$PROJECT_DIR$/EventService/api/controllers/eventController.js" />
         <option value="$PROJECT_DIR$/AdminService/api/controllers/adminController.js" />
+        <option value="$PROJECT_DIR$/EventService/api/models/question.js" />
         <option value="$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js" />
         <option value="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" />
       </list>
@@ -205,9 +196,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,38 +215,6 @@
             <path>
               <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
@@ -451,7 +411,7 @@
       <updated>1525915669470</updated>
       <workItem from="1525915671718" duration="34556000" />
       <workItem from="1526026498680" duration="429000" />
-      <workItem from="1526027783175" duration="35581000" />
+      <workItem from="1526027783175" duration="36327000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1526029592898</created>
@@ -474,14 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526045590029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added api gateway">
+      <created>1526117524737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526117524737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70566000" />
+    <option name="totallyTimeSpent" value="71312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -493,13 +460,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4328767" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4328767" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32876712" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1416309" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10543131" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -555,7 +522,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added new services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new services" />
+    <MESSAGE value="Added api gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added api gateway" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/EventService/server.js">
@@ -705,20 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApiGateway/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4481">
@@ -832,31 +786,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/controllers/eventController.js">
+    <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="145" column="54" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="54" />
+        <state relative-caret-position="153">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EventService/api/routes/eventRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="150">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/controllers/eventController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        <state relative-caret-position="482">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+        <state relative-caret-position="253">
+          <caret line="86" column="81" lean-forward="true" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
         </state>
       </provider>
     </entry>
