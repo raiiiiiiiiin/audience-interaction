@@ -21,6 +21,18 @@ module.exports = function(app) {
         }
     };
 
+    var verifyAdminOrEventJoined = function(req, res, next) {
+        console.log(req.body.urlId);
+        if (req.session.urlId || req.session.adminLoggedIn) {
+            if (!req.session.adminLoggedIn) {
+                req.body.urlId = req.session.urlId; // add urlId
+            }
+            next();
+        } else {
+            res.status(401).json({message:'invalid request'});
+        }
+    };
+
     app.route('/login')
         .post(gatewayController.login);
     app.route('/logout')
@@ -39,7 +51,7 @@ module.exports = function(app) {
     app.route('/join')
         .post(gatewayController.join);
     app.route('/event')
-        .post(verifyEventJoined, gatewayController.eventWithQuestions);
+        .post(verifyAdminOrEventJoined, gatewayController.eventWithQuestions);
     app.route('/add-question')
         .post(verifyEventJoined, gatewayController.addQuestion);
     app.route('/like')

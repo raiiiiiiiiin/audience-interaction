@@ -57,6 +57,17 @@ class Event extends Component {
         this.getEvent();
     };
 
+    logout = () => {
+        axios.post(API_ROOT+'/logout')
+            .then((response) => {
+                this.props.history.push('/');
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    };
+
+
     closeDialog = () => {
         this.setState({deleteDialog: false, editDialog: false});
     };
@@ -93,13 +104,21 @@ class Event extends Component {
     };
 
     getEvent= () => {
-        axios.post(API_ROOT+'/event')
-            .then((response) => {
+        var payload ={};
+        if (this.props && this.props.location && this.props.location.state && this.props.location.state.urlId){
+            payload={
+                "urlId":this.props.location.state.urlId
+            };
+
+        }
+
+        axios.post(API_ROOT+'/event',payload)
+            .then((response) => {console.log(response);
                 this.setState({event: response.data.event, sessionId: response.data.sessionId, isAdminLogged: response.data.isAdminLogged});
             })
             .catch((error) => {
                 console.log(error);
-                //this.props.history.push('/');
+                this.props.history.push('/');
             });
     };
 
@@ -295,7 +314,8 @@ class Event extends Component {
                     <div>
                         <AppBar
                             title={"Event: " + this.state.event.name}
-                            showMenuIconButton={false}
+                            iconElementLeft={<div/>}
+                            iconElementRight={<FlatButton label="Leave event" onClick={()=> this.logout()}/>}
                         />
 
                         <Paper style={styleLabel} zDepth={0} >

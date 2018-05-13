@@ -186,6 +186,10 @@ function wrapState(ComposedComponent) {
                                                 </p>
                                             }
                                             secondaryTextLines={2}
+                                            onClick={()=>{this.props.history.push({
+                                                pathname:'/event',
+                                                state: {urlId: event.urlId}
+                                            })}}
                                         />)
                                 })
                             }

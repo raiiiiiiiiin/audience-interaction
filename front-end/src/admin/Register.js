@@ -7,6 +7,7 @@ import axios from 'axios';
 import { API_ROOT } from '../util/api-config.js';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
+import FlatButton from 'material-ui/FlatButton';
 
 axios.defaults.withCredentials = true;
 
@@ -80,7 +81,8 @@ class Register extends Component {
                     <div>
                         <AppBar
                             title="Register"
-                            showMenuIconButton={false}
+                            iconElementLeft={<div/>}
+                            iconElementRight={<FlatButton label="Join" onClick={()=> this.props.history.push('/')}/>}
                         />
                         <TextField
                             hintText="Enter your Email"

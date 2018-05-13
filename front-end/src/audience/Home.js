@@ -7,6 +7,7 @@ import { API_ROOT } from '../util/api-config.js';
 import axios from 'axios';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
+import FlatButton from 'material-ui/FlatButton';
 
 axios.defaults.withCredentials = true;
 
@@ -54,7 +55,8 @@ class Home extends Component {
                 <div>
                     <AppBar
                         title="Join Event"
-                        showMenuIconButton={false}
+                        iconElementLeft={<div/>}
+                        iconElementRight={<FlatButton label="Admin" onClick={()=> this.props.history.push('/admin')}/>}
                     />
                     <TextField
                         hintText="Enter code here"
