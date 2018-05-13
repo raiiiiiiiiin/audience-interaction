@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3090,
+    dbURL = process.env.DBURL || 'mongodb://localhost:27017/gateway',
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
@@ -9,7 +10,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/gateway');
+mongoose.connect(dbURL);
 var db = mongoose.connection;
 
 app.use(session({

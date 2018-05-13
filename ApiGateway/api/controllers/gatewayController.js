@@ -1,8 +1,8 @@
 'use strict';
 
 const request = require('request');
-const adminService = 'http://localhost:3000/';
-const eventService = 'http://localhost:3001/';
+const adminService = process.env.ADMINURL || 'http://localhost:3000/';
+const eventService = process.env.EVENTURL || 'http://localhost:3001/';
 
 var getAdminServerOptions = function(endpoint, res) {
     return getServerOptions(adminService, endpoint, res);
@@ -77,6 +77,7 @@ exports.toggleGoodQuestion = function(req, res) {
 
 exports.join = function(req, res) {
     request(getEventServerOptions("join", req), function(err, response) {
+        console.log('/join: ' + response);
         if (response && response.body) {
             var jsonBody = JSON.parse(response.body);
             if (jsonBody.isValid) {

@@ -166,7 +166,7 @@ function wrapState(ComposedComponent) {
                         >
 
                             {
-                                this.state && this.state.events && this.state.events.map((event, index) => {
+                                this.state && this.state.events.length > 0 ? this.state.events.map((event, index) => {
                                     return (
                                         <ListItem
                                             key={index}
@@ -192,6 +192,8 @@ function wrapState(ComposedComponent) {
                                             })}}
                                         />)
                                 })
+                                    :
+                                    <div><p>There are no current events. You can add an event by using the '+' button on the upper left corner.</p></div>
                             }
                         </ComposedComponent>
                         <Dialog

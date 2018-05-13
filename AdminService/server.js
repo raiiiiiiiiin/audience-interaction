@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000,
+    dbURL = process.env.DBURL || 'mongodb://localhost:27017/admin',
     mongoose = require('mongoose'),
     Admin = require('./api/models/admin'),
     bodyParser = require('body-parser'),
@@ -8,7 +9,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/admin');
+mongoose.connect(dbURL);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

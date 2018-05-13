@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3001,
+    dbURL = process.env.DBURL || 'mongodb://localhost:27017/event',
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
     Question = require('./api/models/question'),
@@ -9,7 +10,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/event');
+mongoose.connect(dbURL);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

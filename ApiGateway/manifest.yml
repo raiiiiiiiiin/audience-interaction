@@ -1,0 +1,7 @@
+applications:
+- name: api-gateway
+  memory: 128M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  command: node server.js
+  random-route: true

@@ -16,6 +16,7 @@ import Like from 'material-ui/svg-icons/action/thumb-up';
 import Unlike from 'material-ui/svg-icons/action/thumb-down';
 import StarBorderIcon from 'material-ui/svg-icons/toggle/star-border';
 import StarIcon from 'material-ui/svg-icons/toggle/star';
+import ArrowBackIcon from 'material-ui/svg-icons/navigation/arrow-back';
 import Badge from 'material-ui/Badge';
 import SortIcon from 'material-ui/svg-icons/content/sort';
 import IconMenu from 'material-ui/IconMenu';
@@ -54,8 +55,14 @@ class Event extends Component {
     }
 
     componentWillMount() {
+        // The call should be through websocket
         this.getEvent();
+        this.getEventInterval = setInterval(this.getEvent.bind(this), 2000);
     };
+
+    componentWillUnmount(){
+        clearInterval(this.getEventInterval);
+    }
 
     logout = () => {
         axios.post(API_ROOT+'/logout')
@@ -132,7 +139,7 @@ class Event extends Component {
         axios.post(API_ROOT+'/add-question', payload)
             .then( (response) => {
                 this.setState({question:'',name:''});
-                console.log(response.data);
+                this.getEvent();
             })
             .catch( (error) => {
                 console.log(error);
@@ -314,8 +321,16 @@ class Event extends Component {
                     <div>
                         <AppBar
                             title={"Event: " + this.state.event.name}
-                            iconElementLeft={<div/>}
-                            iconElementRight={<FlatButton label="Leave event" onClick={()=> this.logout()}/>}
+                            iconElementLeft={
+                                this.props && this.props.location && this.props.location.state && this.props.location.state.urlId
+                                    ? <p><ArrowBackIcon onClick={() => this.props.history.push('/events')} style={{cursor:'pointer'}}/></p>
+                                :
+                                <div/>}
+                            iconElementRight={<FlatButton label={
+                                (this.props && this.props.location && this.props.location.state && this.props.location.state.urlId)
+                                ? "Log out":
+                                "Leave event"
+                            } onClick={()=> this.logout()}/>}
                         />
 
                         <Paper style={styleLabel} zDepth={0} >
