@@ -9,13 +9,16 @@ import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import Paper from 'material-ui/Paper';
 import Divider from 'material-ui/Divider';
-import {List, ListItem, makeSelectable} from 'material-ui/List';
+import {List, ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
-import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors';
 import Moment from 'moment';
 import Like from 'material-ui/svg-icons/action/thumb-up';
 import Unlike from 'material-ui/svg-icons/action/thumb-down';
 import Badge from 'material-ui/Badge';
+import SortIcon from 'material-ui/svg-icons/content/sort';
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
+import IconButton from 'material-ui/IconButton';
 
 axios.defaults.withCredentials = true;
 
@@ -34,25 +37,26 @@ class Event extends Component {
             question:'',
             name:'',
             event: {},
-            sessionId:''
+            sessionId:'',
+            sortType: ['Likes', 'Created time'],
+            selectedSort: 'Likes'
         }
     }
 
     componentWillMount() {
         this.getEvent();
-    }
+    };
 
     getEvent= () => {
         axios.post(API_ROOT+'/event')
             .then((response) => {
-                console.log(response);
-                this.setState({event: response.data.event, sessionId: response.data.sessionId});
+                this.setState({event: response.data.event, sessionId: response.data.sessionId}, this.sort);
             })
             .catch((error) => {
                 console.log(error);
                 //this.props.history.push('/');
             });
-    }
+    };
 
     handleClick = () =>{
         var payload={
@@ -166,6 +170,10 @@ class Event extends Component {
                             title={"Event: " + this.state.event.name}
                             showMenuIconButton={false}
                         />
+
+                        <Paper style={styleLabel} zDepth={0} >
+                            <p>Ask anything</p>
+                        </Paper>
                         <Paper style={style} zDepth={2} >
                             <TextField
                                 hintText="Type your question"
@@ -199,10 +207,42 @@ class Event extends Component {
                         </Paper>
                         {
                             this.state.event && this.state.event.questions ?
+                                <div>
+                                    <Paper style={styleLabel} zDepth={0} >
+                                        <div style={{display: 'flex'}}>
+                                            <p style={{flex: 1}}>
+                                                {this.state.event.questions.length} questions
+                                            </p>
+                                            <div style={{display: 'flex',flex: .1}}>
+                                                <p style={{fontSize:10}}>{this.state.selectedSort}</p>
+                                                <IconMenu
+                                                    iconButtonElement={<IconButton><SortIcon /></IconButton>}
+                                                    multiple={false}
+                                                    onItemClick={(event, value)=>this.setState({selectedSort: value.key},console.log(value))}
+                                                >
+                                                    <MenuItem primaryText="Sort questions by" disabled={true}/>
+                                                    {
+                                                        this.state.sortType && this.state.sortType.map((sort, index) => {
+                                                            return (
+                                                                <MenuItem key={sort} value={sort} primaryText={sort}/>
+                                                            )
+                                                        })
+                                                    }
+                                                </IconMenu>
+
+                                            </div>
+                                        </div>
+                                    </Paper>
                                 <Paper style={style} zDepth={2} >
                                 <List style={{textAlign:'left'}}>
                                     {
-                                        this.state.event.questions.map((question, index) => {return(
+                                        this.state.event.questions.sort((a,b) => {
+                                            if (this.state.selectedSort === 'Likes') {
+                                                return a.likes.length<b.likes.length;
+                                            } else if (this.state.selectedSort === 'Created time') {
+                                                return a.createdDate<b.createdDate;
+                                            }
+                                        }).map((question, index) => {return(
                                             <div key={index}>
                                             <ListItem
                                                 leftAvatar={questionAvatar(question)}
@@ -218,11 +258,13 @@ class Event extends Component {
                                     }
                                 </List>
                                 </Paper>
+                                </div>
                                 : null
 
                         }
                     </div>
-                </MuiThemeProvider>
+                </MuiThemeProvider>{
+                console.log(this.state.event.questions)}
             </div>);
     }
 }
@@ -233,7 +275,17 @@ const style = {
     marginRight:20,
     textAlign: 'center',
     display: 'inline-block',
-    marginTop: 50
+    marginBottom: 20
+};
+
+const styleLabel = {
+    width: '50%',
+    marginLeft:20,
+    marginRight:20,
+    textAlign: 'left',
+    display: 'inline-block',
+    marginTop: 20,
+    color: 'rgba(0,0,0,.4)'
 };
 
 
