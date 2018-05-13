@@ -63,9 +63,10 @@ exports.deleteQuestion = function(req, res) {
                 Event.removeQuestion(req.body.urlId, req.body.questionId,
                     function(err, data) {
                         if(err) {
-                            return res.status(500).json({'error' : 'error in deleting question'});
+                            res.json({isValid: false, error : 'error in deleting question'});
+                        } else {
+                            res.json({isValid: true, message: 'Question remove success'});
                         }
-                        res.send('Question remove success');
                 });
             });
     }
@@ -76,8 +77,10 @@ exports.updateQuestion = function(req, res) {
         var question = new Question(req.body);
         Question.findOneAndUpdate({_id: question._id}, {$set:{description:question.description}}, {new: true}, function (err, event) {
             if (err)
-                res.send(err);
-            res.json(event);
+                res.json({isValid: false, error : 'error in updating question'});
+            else {
+                res.json({isValid: true, message: 'Question updated'});
+            }
         });
     } else {
         res.json({error:'Invalid parameters.'});
@@ -95,12 +98,13 @@ exports.addGoodQuestion = function(req, res) {
                         {new: true},
                         function (err, data) {
                             if(err) {
-                                return res.status(500).json({'error' : 'error in adding good question'});
+                                return res.json({isValid: false, error : 'error in adding good question'});
+                            } else {
+                                res.json({isValid: true, message:'Good question add success'});
                             }
-                            res.send('Good question add success');
                         });
                 } else {
-                    return res.status(500).json({'error' : 'You can only have 3 good questions'});
+                    return res.json({isValid: false, error : 'You can only have 3 good questions'});
                 }
 
         });
@@ -117,9 +121,10 @@ exports.removeGoodQuestion = function(req, res) {
             { new: true }).exec(
                 function(err, data) {
                     if(err) {
-                        return res.status(500).json({'error' : 'error in removing good question'});
+                        return res.json({isValid: false, error : 'error in removing good question'});
+                    } else {
+                        res.json({isValid: true, message:'Good question remove success'});
                     }
-                    res.send('Good question remove success');
                 });
     }
 };

@@ -110,6 +110,6 @@ exports.getEvents = function(req,res) {
 
 exports.eventWithQuestions = function(req, res) {
     request(getEventServerOptions("get-event-with-questions", req), function(err, response) {
-        res.json({event: JSON.parse(response.body), sessionId: req.session.id});
+        res.json({event: JSON.parse(response.body), sessionId: req.session.id, isAdminLogged: req.session.adminLoggedIn});
     });
 };

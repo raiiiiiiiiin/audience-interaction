@@ -14,11 +14,16 @@ import Avatar from 'material-ui/Avatar';
 import Moment from 'moment';
 import Like from 'material-ui/svg-icons/action/thumb-up';
 import Unlike from 'material-ui/svg-icons/action/thumb-down';
+import StarBorderIcon from 'material-ui/svg-icons/toggle/star-border';
+import StarIcon from 'material-ui/svg-icons/toggle/star';
 import Badge from 'material-ui/Badge';
 import SortIcon from 'material-ui/svg-icons/content/sort';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
 
 axios.defaults.withCredentials = true;
 
@@ -39,7 +44,12 @@ class Event extends Component {
             event: {},
             sessionId:'',
             sortType: ['Likes', 'Created time'],
-            selectedSort: 'Likes'
+            selectedSort: 'Likes',
+            isAdminLogged: false,
+            deleteDialog: false,
+            selectedQuestion: '',
+            editDialog: false,
+            updatedQuestion: ''
         }
     }
 
@@ -47,10 +57,45 @@ class Event extends Component {
         this.getEvent();
     };
 
+    closeDialog = () => {
+        this.setState({deleteDialog: false, editDialog: false});
+    };
+
+    deleteQuestion = () => {
+        var payload={
+            "urlId":this.state.event.urlId,
+            "questionId":this.state.selectedQuestion._id
+        };
+        axios.post(API_ROOT+'/delete-question', payload)
+            .then( (response) => {
+                this.setState({selectedQuestion:''}, this.closeDialog());
+                this.getEvent();
+            })
+            .catch( (error) => {
+                console.log(error);
+            });
+    };
+
+    editQuestion = () => {
+        var payload={
+            "_id":this.state.selectedQuestion._id,
+            "description":this.state.updatedQuestion,
+            "createdDate":this.state.selectedQuestion.createdDate,
+        };
+        axios.post(API_ROOT+'/edit-question', payload)
+            .then( (response) => {
+                this.setState({selectedQuestion:'', updatedQuestion:''}, this.closeDialog());
+                this.getEvent();
+            })
+            .catch( (error) => {
+                console.log(error);
+            });
+    };
+
     getEvent= () => {
         axios.post(API_ROOT+'/event')
             .then((response) => {
-                this.setState({event: response.data.event, sessionId: response.data.sessionId}, this.sort);
+                this.setState({event: response.data.event, sessionId: response.data.sessionId, isAdminLogged: response.data.isAdminLogged});
             })
             .catch((error) => {
                 console.log(error);
@@ -90,7 +135,7 @@ class Event extends Component {
             });
     };
 
-    unlike = (question) => {;
+    unlike = (question) => {
         axios.delete(API_ROOT+'/like', {data:{
                 "_id":question._id,
                 "description":question.description,
@@ -113,6 +158,47 @@ class Event extends Component {
             }
         }
         return false;
+    };
+
+    isGoodQuestion = (question) => {
+        var i = this.state.event.goodQuestions.length;
+        while (i--) {
+            if (this.state.event.goodQuestions[i] === question._id) {
+                return true;
+            }
+        }
+        return false;
+    };
+
+    addGoodQuestion = (question) => {
+        var payload={
+            "urlId":this.state.event.urlId,
+            "questionId":question._id
+        };
+        axios.put(API_ROOT+'/toggle-good-question', payload)
+            .then( (response) => {
+                if (!response.data.isValid) {
+                    alert(response.data.error);
+                }
+                this.getEvent();
+            })
+            .catch( (error) => {
+                console.log(error);
+            });
+    };
+
+    removeGoodQuestion = (question) => {
+        axios.delete(API_ROOT+'/toggle-good-question', {
+            data:{
+                "urlId":this.state.event.urlId,
+                "questionId":question._id
+            }})
+            .then( (response) => {
+                this.getEvent();
+            })
+            .catch( (error) => {
+                console.log(error);
+            });
     };
 
     render() {
@@ -142,6 +228,31 @@ class Event extends Component {
 
         const questionLike = (question) => (
                 <div>
+                    {
+                        this.isGoodQuestion(question)
+                            ?
+                            <StarIcon
+                                onClick={() => {
+                                    if (this.state.isAdminLogged) {
+                                        this.removeGoodQuestion(question)
+                                    }
+                                }}
+                                style={{
+                                    color: 'rgba(250,218,0,1)', cursor: 'pointer'
+                                }}
+                            />
+                            :
+                            <StarBorderIcon
+                                onClick={() => {
+                                    if (this.state.isAdminLogged) {
+                                        this.addGoodQuestion(question)
+                                    }
+                                }}
+                                style={{
+                                    cursor: 'pointer'
+                                }}
+                            />
+                    }
                     <Badge
                         badgeContent={question.unlikes.length}
                         primary={true}
@@ -160,6 +271,22 @@ class Event extends Component {
                             style={{opacity: this.questionLiked(question.likes) ? 1 : .5, cursor: 'pointer'}}
                         />
                     </Badge>
+                    {
+                        this.state.isAdminLogged ?
+                            <IconMenu
+                                iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
+                                anchorOrigin={{horizontal: 'left', vertical: 'top'}}
+                                targetOrigin={{horizontal: 'left', vertical: 'top'}}
+                            >
+                                <MenuItem primaryText="Edit" onClick={() => {
+                                    this.setState({editDialog: true, selectedQuestion: question, updatedQuestion: question.description});
+                                }}/>
+                                <MenuItem primaryText="Delete" onClick={() => {
+                                    this.setState({deleteDialog: true, selectedQuestion: question});
+                                }}/>
+                            </IconMenu>
+                            : null
+                    }
                 </div>
         )
         return (
@@ -262,9 +389,59 @@ class Event extends Component {
                                 : null
 
                         }
+                        {
+                            <div>
+                                <Dialog
+                                    actions={[
+                                        <FlatButton
+                                            label="Cancel"
+                                            primary={true}
+                                            onClick={this.closeDialog}
+                                        />,
+                                        <FlatButton
+                                            label="OK"
+                                            primary={true}
+                                            onClick={this.deleteQuestion}
+                                        />
+                                    ]}
+                                    modal={false}
+                                    open={this.state.deleteDialog}
+                                    onRequestClose={this.closeDialog}
+                                >
+                                    Delete question?
+                                </Dialog>
+
+                                <Dialog
+                                    actions={[
+                                        <FlatButton
+                                            label="Cancel"
+                                            primary={true}
+                                            onClick={this.closeDialog}
+                                        />,
+                                        <FlatButton
+                                            label="OK"
+                                            primary={true}
+                                            onClick={this.editQuestion}
+                                        />
+                                    ]}
+                                    modal={false}
+                                    open={this.state.editDialog}
+                                    onRequestClose={this.closeDialog}
+                                >
+                                    <TextField
+                                        hintText="Edit question"
+                                        floatingLabelText="Question"
+                                        value={this.state.updatedQuestion}
+                                        onChange = {(event,newValue) => {
+                                            this.setState({updatedQuestion:newValue});
+                                        }}
+                                    />
+                                </Dialog>
+                            </div>
+
+                        }
                     </div>
-                </MuiThemeProvider>{
-                console.log(this.state.event.questions)}
+                </MuiThemeProvider>
             </div>);
     }
 }

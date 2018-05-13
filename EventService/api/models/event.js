@@ -75,7 +75,12 @@ EventSchema.statics.removeQuestion = function removeQuestion(urlId, questionId, 
         {urlId: urlId},
         {$pull: {questions:questionId}},
         { new: true }).exec(function(err, data) {
-            callback(err, data);
+            Event.findOneAndUpdate(
+                {urlId: urlId},
+                {$pull: {goodQuestions:questionId}},
+                { new: true }).exec(function(err, data) {
+                callback(err, data);
+            });
         });
 };
 
