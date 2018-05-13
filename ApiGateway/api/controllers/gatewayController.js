@@ -77,7 +77,6 @@ exports.toggleGoodQuestion = function(req, res) {
 
 exports.join = function(req, res) {
     request(getEventServerOptions("join", req), function(err, response) {
-        console.log(response);
         if (response && response.body) {
             var jsonBody = JSON.parse(response.body);
             if (jsonBody.isValid) {
@@ -111,6 +110,6 @@ exports.getEvents = function(req,res) {
 
 exports.eventWithQuestions = function(req, res) {
     request(getEventServerOptions("get-event-with-questions", req), function(err, response) {
-        res.json(JSON.parse(response.body));
+        res.json({event: JSON.parse(response.body), sessionId: req.session.id});
     });
 };

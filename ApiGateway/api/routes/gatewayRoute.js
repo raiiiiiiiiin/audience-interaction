@@ -12,7 +12,7 @@ module.exports = function(app) {
     };
 
     var verifyEventJoined = function(req, res, next) {
-        console.log('here');
+        console.log(req.session.id);
         if (req.session.urlId) {
             req.body.urlId = req.session.urlId; // add urlId
             next();

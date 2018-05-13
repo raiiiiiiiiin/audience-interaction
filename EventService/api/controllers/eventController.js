@@ -27,8 +27,10 @@ exports.getEventWithQuestions = function(req, res) {
     if (req.body.urlId) {
         Event.getEventWithQuestions(req.body.urlId, function(err, event) {
             if (err)
-                res.send(err);
-            res.json(event);
+                res.json(err);
+            else {
+                res.json(event);
+            }
         });
     } else {
         res.json({error:'Invalid parameters.'});
@@ -42,7 +44,9 @@ exports.addQuestion = function(req, res) {
         Event.addQuestion(req.body.urlId, question, function (err, event) {
             if (err)
                 res.json(err);
-            res.json(event);
+            else {
+                res.json(event);
+            }
         });
     } else {
         res.json({error:'Invalid parameters.'});
@@ -147,7 +151,7 @@ exports.likeQuestion = function(req, res) {
                 if (err) {
                     return next(err);
                 } else {
-                    return res.send('like success');
+                    return res.json({message:'like success'});
                 }
             });
     }
@@ -160,7 +164,7 @@ exports.unlikeQuestion = function(req, res) {
                 if (err) {
                     return next(err);
                 } else {
-                    return res.send('unlike success');
+                    return res.send({message:'unlike success'});
                 }
             });
     }

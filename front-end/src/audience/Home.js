@@ -35,7 +35,7 @@ class Home extends Component {
         axios.post(API_ROOT+'/join', payload)
             .then( (response) => {
                 if(response.data.isValid){
-                    console.log(response.data.urlId);
+                    this.props.history.push('/event');
                 }
                 else{
                     this.setState({codeError: 'Sorry, there is no such event active right now.'});

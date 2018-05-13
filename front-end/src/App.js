@@ -5,6 +5,7 @@ import LoginScreen from './admin/LoginScreen';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./audience/Home";
 import Events from "./admin/Events";
+import Event from "./audience/Event";
 
 injectTapEventPlugin();
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/admin" component={LoginScreen} />
                         <Route path="/events" component={Events} />
+                        <Route path="/event" component={Event} />
                     </div>
                 </Router>
             </div>

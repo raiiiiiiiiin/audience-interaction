@@ -60,6 +60,9 @@ QuestionSchema.statics.unlike = function(questionId, sessionId, callback) {
 QuestionSchema.pre('save', function(next) {
     var question = this;
 
+    if (question.name === "") {
+        question.name = 'Anonymous';
+    }
     question.createdDate = new Date();
 
     next();

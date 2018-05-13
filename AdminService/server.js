@@ -13,11 +13,15 @@ mongoose.connect('mongodb://localhost:27017/admin');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(cors({
-    origin:['http://localhost:3009'],
-    methods:['GET','POST'],
-    credentials: true // enable set cookie
-}));
+
+var corsOptions = {
+    origin: true,
+    methods:['GET','POST', 'PUT', 'DELETE'],
+    credentials: true,
+    maxAge: 3600
+};
+
+app.use(cors(corsOptions));
 
 var routes = require('./api/routes/adminRoutes');
 routes(app);
