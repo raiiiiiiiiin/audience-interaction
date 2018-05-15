@@ -332,41 +332,44 @@ class Event extends Component {
                                 "Leave event"
                             } onClick={()=> this.logout()}/>}
                         />
+                        {this.state.isAdminLogged ? null :
+                            <div>
+                                <Paper style={styleLabel} zDepth={0} >
+                                    <p>Ask anything</p>
+                                </Paper>
+                                <Paper style={style} zDepth={2} >
+                                    <TextField
+                                        hintText="Type your question"
+                                        onChange = {(event,newValue) => {
+                                            this.setState({question:newValue});
+                                        }}
+                                        multiLine={true}
+                                        style={{paddingRight: 100, width:'80%'}}
+                                        value={this.state.question}
+                                        underlineShow={false}
+                                    />
+                                    <br/>
+                                    {
+                                        this.state.question!=="" ?
+                                            <div>
+                                                <Divider/>
+                                                <TextField
+                                                    hintText="Your name (optional)"
+                                                    onChange = {(event,newValue) => {
+                                                        this.setState({name:newValue});
+                                                    }}
+                                                    value={this.state.name}
+                                                    underlineShow={false}
+                                                    style={{width:'80%'}}
 
-                        <Paper style={styleLabel} zDepth={0} >
-                            <p>Ask anything</p>
-                        </Paper>
-                        <Paper style={style} zDepth={2} >
-                            <TextField
-                                hintText="Type your question"
-                                onChange = {(event,newValue) => {
-                                    this.setState({question:newValue});
-                                }}
-                                multiLine={true}
-                                style={{paddingRight: 100, width:'80%'}}
-                                value={this.state.question}
-                                underlineShow={false}
-                            />
-                            <br/>
-                            {
-                                this.state.question!=="" ?
-                                    <div>
-                                        <Divider/>
-                                        <TextField
-                                            hintText="Your name (optional)"
-                                            onChange = {(event,newValue) => {
-                                                this.setState({name:newValue});
-                                            }}
-                                            value={this.state.name}
-                                            underlineShow={false}
-                                            style={{width:'80%'}}
-
-                                        />
-                                        <RaisedButton label="Send" primary={true} onClick={() => this.handleClick()}/>
-                                    </div>
-                                : <br/>
+                                                />
+                                                <RaisedButton label="Send" primary={true} onClick={() => this.handleClick()}/>
+                                            </div>
+                                        : <br/>
+                                    }
+                                </Paper>
+                            </div>
                             }
-                        </Paper>
                         {
                             this.state.event && this.state.event.questions ?
                                 <div>

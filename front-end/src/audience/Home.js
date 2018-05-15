@@ -36,13 +36,23 @@ class Home extends Component {
         axios.post(API_ROOT+'/join', payload)
             .then( (response) => {
                 if(response.data.isValid){
-                    this.props.history.push('/event');
+                    this.logout();
                 }
                 else{
                     this.setState({codeError: 'Sorry, there is no such event active right now.'});
                 }
             })
             .catch( (error) => {
+                console.log(error);
+            });
+    };
+
+    logout = () => {
+        axios.post(API_ROOT+'/logout')
+            .then((response) => {
+                this.props.history.push('/event');
+            })
+            .catch(function (error) {
                 console.log(error);
             });
     };
