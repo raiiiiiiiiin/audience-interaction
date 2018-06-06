@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5f014a2e-e708-4793-ac1a-f4389bbb955f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/audience/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/audience/Event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/audience/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/audience/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminService/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminService/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventService/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/EventService/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,92 +16,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="event.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="104" column="37" lean-forward="true" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/src/admin/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state>
+              <caret column="25" selection-start-column="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/src/admin/Register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Events.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front-end/src/admin/Events.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="256" column="9" lean-forward="true" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-end/src/audience/Event.js">
+      <file leaf-file-name="LoginScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/src/admin/LoginScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="355" column="58" selection-start-line="355" selection-start-column="58" selection-end-line="355" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front-end/src/audience/Home.js">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdminService/api/models/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="21" column="69" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gatewayRoute.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js">
+      <file leaf-file-name="question.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="62" />
+            <state relative-caret-position="304">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-end/src/util/api-config.js">
+      <file leaf-file-name="adminRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdminService/api/routes/adminRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gatewayController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-end/manifest.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-end/package.json">
+      <file leaf-file-name="eventRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EventService/api/routes/eventRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-end/public/index.html">
+      <file leaf-file-name="adminController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdminService/api/controllers/adminController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="405">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -116,11 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onKeyboardFocus</find>
-      <find>KeyboardFocus</find>
-      <find>IconMenu</find>
-      <find>Like</find>
-      <find>star</find>
       <find>staricon</find>
       <find>togglegood</find>
       <find>delete</find>
@@ -135,7 +134,6 @@
       <find>even</find>
       <find>iconElementLeft</find>
       <find>appba</find>
-      <find>adminLoggedIn</find>
       <find>localhost</find>
       <find>componentWillUnmount</find>
       <find>componentDidMount</find>
@@ -146,6 +144,12 @@
       <find>&quot;event</find>
       <find>event</find>
       <find>logout</find>
+      <find>.then</find>
+      <find>()=</find>
+      <find>httpServer</find>
+      <find>get</find>
+      <find>sessionId</find>
+      <find>adminLoggedIn</find>
     </findStrings>
     <replaceStrings>
       <replace>material-ui/</replace>
@@ -184,22 +188,22 @@
         <option value="$PROJECT_DIR$/EventService/api/controllers/eventController.js" />
         <option value="$PROJECT_DIR$/front-end/src/admin/Register.js" />
         <option value="$USER_HOME$/Downloads/2031681-e06a8b24a3683baa5413c730e91f9e822087fa04/frontend.html" />
-        <option value="$PROJECT_DIR$/AdminService/server.js" />
         <option value="$PROJECT_DIR$/AdminService/package.json" />
         <option value="$PROJECT_DIR$/EventService/manifest.yml" />
         <option value="$PROJECT_DIR$/AdminService/manifest.yml" />
-        <option value="$PROJECT_DIR$/EventService/server.js" />
-        <option value="$PROJECT_DIR$/ApiGateway/server.js" />
         <option value="$PROJECT_DIR$/ApiGateway/manifest.yml" />
         <option value="$PROJECT_DIR$/front-end/src/util/api-config.js" />
         <option value="$PROJECT_DIR$/front-end/public/index.html" />
         <option value="$PROJECT_DIR$/front-end/manifest.yml" />
-        <option value="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" />
         <option value="$PROJECT_DIR$/front-end/src/admin/Login.js" />
         <option value="$PROJECT_DIR$/front-end/src/admin/Events.js" />
         <option value="$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js" />
         <option value="$PROJECT_DIR$/front-end/src/audience/Event.js" />
         <option value="$PROJECT_DIR$/front-end/src/audience/Home.js" />
+        <option value="$PROJECT_DIR$/EventService/server.js" />
+        <option value="$PROJECT_DIR$/AdminService/server.js" />
+        <option value="$PROJECT_DIR$/ApiGateway/server.js" />
+        <option value="$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js" />
       </list>
     </option>
   </component>
@@ -224,455 +228,6 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/AdminService/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/abbrev/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ansi-align/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/anymatch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/arr-diff/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/arr-flatten/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/arr-union/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/array-unique/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/asn1/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/assert-plus/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/assign-symbols/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/async-each/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/async/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/asynckit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/atob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/aws-sign2/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/aws4/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/base/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/base/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/base/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/base/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/base/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/bcrypt-pbkdf/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/binary-extensions/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/bluebird/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/boom/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/boxen/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/braces/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/braces/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/bson/browser_build/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/bson/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/buffer-shims/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cache-base/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/capture-stack-trace/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/caseless/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/chokidar/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ci-info/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/class-utils/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/class-utils/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cli-boxes/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/co/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/collection-visit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/color-convert/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/color-name/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/combined-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/component-emitter/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/configstore/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/connect-mongo/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cookie-parser/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/copy-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cors/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/crc/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/create-error-class/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cross-spawn/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cryptiles/node_modules/boom/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/cryptiles/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/crypto-random-string/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/dashdash/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/decode-uri-component/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/deep-extend/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/define-property/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/define-property/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/delayed-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/dot-prop/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/duplexer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/duplexer3/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ecc-jsbn/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/es6-promise/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/event-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/eventemitter3/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/execa/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/expand-brackets/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/expand-brackets/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/express-http-proxy/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/express-http-proxy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/express-session/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extend-shallow/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extend/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extglob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fast-json-stable-stringify/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fill-range/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fill-range/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/follow-redirects/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/follow-redirects/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/for-in/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/forever-agent/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/form-data/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fragment-cache/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/from/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/abbrev/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/aproba/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/are-we-there-yet/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/chownr/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/code-point-at/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/console-control-strings/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/deep-extend/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/delegates/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/detect-libc/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/fs-minipass/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/fs.realpath/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/gauge/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/has-unicode/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/ignore-walk/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/ini/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/minipass/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/minizlib/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/needle/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/node-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/nopt/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/npm-bundled/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/npm-packlist/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/npmlog/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/number-is-nan/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/os-homedir/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/os-tmpdir/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/osenv/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/rc/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/rc/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/rimraf/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/sax/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/set-blocking/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/strip-json-comments/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/tar/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/wide-align/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/node_modules/yallist/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/fsevents/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/get-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/get-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/getpass/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/glob-parent/node_modules/is-glob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/glob-parent/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/global-dirs/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/got/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/har-schema/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/har-validator/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/has-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/has-values/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/has-values/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/hawk/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/hoek/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/http-proxy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/http-signature/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ignore-by-default/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/import-lazy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/imurmurhash/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ini/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-binary-path/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-buffer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-ci/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-data-descriptor/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-descriptor/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-extglob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-glob/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-installed-globally/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-npm/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-number/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-number/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-obj/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-odd/node_modules/is-number/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-odd/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-path-inside/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-plain-object/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-redirect/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-retry-allowed/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-typedarray/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/is-windows/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/isexe/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/isobject/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/isstream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/jsbn/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/json-schema/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/json-stringify-safe/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/jsprim/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/kareem/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/latest-version/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/lodash.get/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/lowercase-keys/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/lru-cache/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/make-dir/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/map-cache/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/map-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/map-visit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/micromatch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mixin-deep/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mixin-deep/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb-core/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb/node_modules/es6-promise/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongodb/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose-legacy-pluralize/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/aggregate/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/express/connection-sharing/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/geospatial/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/lean/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/mapreduce/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/promises/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/querybuilder/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/examples/replicasets/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/node_modules/mongodb-core/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/node_modules/mongodb/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mongoose/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mpath/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mquery/node_modules/sliced/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/mquery/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nan/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nan/tools/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nanomatch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nodemon/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nodemon/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/nopt/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/normalize-path/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/npm-run-path/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/oauth-sign/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object-copy/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object-copy/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object-copy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object-visit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/object.pick/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/on-headers/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/p-finally/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/package-json/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/pascalcase/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/path-dirname/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/path-is-inside/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/path-key/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/pause-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/performance-now/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/pify/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/posix-character-classes/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/prepend-http/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ps-tree/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/pseudomap/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/pstree.remy/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/random-bytes/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/raw-body/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/raw-body/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/raw-body/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/rc/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/readdirp/examples/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/readdirp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/regex-not/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/regexp-clone/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/registry-auth-token/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/registry-url/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/remove-trailing-separator/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/repeat-element/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/repeat-string/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/request-promise-core/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/request-promise-native/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/request/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/require_optional/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/require_optional/test/nestedTest/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/requires-port/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/resolve-from/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/resolve-url/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/ret/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/safe-regex/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/semver-diff/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/set-immediate-shim/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/set-value/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/set-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/shebang-command/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/shebang-regex/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/sliced/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-node/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-node/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-util/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon-util/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/snapdragon/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/sntp/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/source-map-resolve/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/source-map-url/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/split-string/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/split/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/sshpk/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/static-extend/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/static-extend/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/stealthy-require/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/stream-combiner/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/stringstream/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/strip-eof/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/strip-json-comments/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/term-size/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/through/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/timed-out/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/to-object-path/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/to-object-path/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/to-regex-range/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/to-regex/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/touch/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/tough-cookie/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/tunnel-agent/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/tweetnacl/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/uid-safe/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/undefsafe/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/union-value/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/union-value/node_modules/set-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/union-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unique-string/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unset-value/node_modules/has-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unset-value/node_modules/has-values/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unset-value/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/unzip-response/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/upath/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/update-notifier/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/urix/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/url-parse-lax/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/use/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/uuid/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/verror/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/which/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/widest-line/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/write-file-atomic/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/xdg-basedir/package.json" />
-      <path value="$PROJECT_DIR$/ApiGateway/node_modules/yallist/package.json" />
       <path value="$PROJECT_DIR$/ApiGateway/package.json" />
       <path value="$PROJECT_DIR$/EventService/package.json" />
       <path value="$PROJECT_DIR$/front-end/package.json" />
@@ -693,6 +248,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -700,6 +257,38 @@
             <path>
               <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminService" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
@@ -783,12 +372,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="audience" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ShopBack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopBack" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -802,7 +396,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -830,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start - gateway">
+  <component name="RunManager" selected="Node.js.gateway">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -853,6 +447,7 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="gateway" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/AdminService" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -907,6 +502,7 @@
       <envs />
     </configuration>
     <list>
+      <item itemvalue="Node.js.gateway" />
       <item itemvalue="npm.start - admin" />
       <item itemvalue="npm.start - gateway" />
       <item itemvalue="npm.start - event" />
@@ -925,7 +521,9 @@
       <workItem from="1525915671718" duration="34556000" />
       <workItem from="1526026498680" duration="429000" />
       <workItem from="1526027783175" duration="99942000" />
-      <workItem from="1526371693068" duration="110000" />
+      <workItem from="1526371693068" duration="505000" />
+      <workItem from="1526448990887" duration="40000" />
+      <workItem from="1526900492881" duration="10375000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1526029592898</created>
@@ -1018,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526204937469</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added logout in home">
+      <created>1526371851628</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1526371851628</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135037000" />
+    <option name="totallyTimeSpent" value="145847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
@@ -1036,14 +641,15 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5369863" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.18958333" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3452055" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5364583" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.18958333" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34479168" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24068157" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24600638" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -1057,39 +663,38 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.5369863" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5364583" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3452055" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34479168" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="RNConsole" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.24931507" />
+      <window_info anchor="bottom" id="RNConsole" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.18958333" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24105866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24600638" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1111,7 +716,13 @@
     <MESSAGE value="Added Good questions" />
     <MESSAGE value="Added Logout" />
     <MESSAGE value="Added PCF files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PCF files" />
+    <MESSAGE value="Added logout in home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logout in home" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/front-end/package.json">
@@ -1209,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdminService/api/routes/adminRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1223,20 +827,6 @@
             <caret column="20" selection-start-column="20" selection-end-column="20" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminService/api/models/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="69" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminService/api/controllers/adminController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1258,31 +848,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/util/MobileTearSheet.js" />
-    <entry file="file://$PROJECT_DIR$/front-end/src/admin/LoginScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/routes/eventRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1314,20 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/api/controllers/eventController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/node_modules/material-ui/AppBar/AppBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1342,24 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/src/admin/Register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EventService/node_modules/ws/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminService/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1384,24 +925,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventService/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApiGateway/manifest.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiGateway/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1419,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/util/api-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1433,56 +953,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js">
+    <entry file="file://$PROJECT_DIR$/front-end/src/audience/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="62" />
+        <state relative-caret-position="690">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js">
+    <entry file="file://$PROJECT_DIR$/front-end/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiGateway/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminService/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/audience/Event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="355" column="58" selection-start-line="355" selection-start-column="58" selection-end-line="355" selection-end-column="58" />
+        <state relative-caret-position="232">
+          <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/src/admin/Events.js">
+    <entry file="file://$PROJECT_DIR$/ApiGateway/api/controllers/gatewayController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="85" selection-start-line="85" selection-end-line="93" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="453">
+          <caret line="115" column="2" lean-forward="true" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiGateway/api/routes/gatewayRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/controllers/eventController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-701">
+          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/models/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="104" column="37" lean-forward="true" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/models/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventService/api/routes/eventRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminService/api/controllers/adminController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminService/api/models/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="69" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminService/api/routes/adminRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/src/admin/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="25" selection-start-column="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/src/audience/Home.js">
+    <entry file="file://$PROJECT_DIR$/front-end/src/admin/Register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state>
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/admin/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/src/admin/Events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="256" column="9" lean-forward="true" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

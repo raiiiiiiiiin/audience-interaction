@@ -6,7 +6,9 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
     MongoStore = require('connect-mongo')(session),
-    cors = require('cors');
+    cors = require('cors'),
+    cluster = require('cluster')
+    numCPUs = require('os').cpus().length;
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -39,7 +41,22 @@ routes(app);
 app.use(function(req, res) {
     res.status(404).send({url: req.originalUrl + ' not found'})
 });
+if (cluster.isMaster) {
+    console.log(`Master ${process.pid} is running`);
 
-app.listen(port, function () {
-    console.log('API Gateway Service RESTful API server started on: ' + port);
-});
+    // Fork workers.
+    for (let i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
+
+    cluster.on('exit', (worker, code, signal) => {
+        console.log(`worker ${worker.process.pid} died`);
+    });
+} else {
+    try{
+        app.listen(port, () => {
+            console.log('API Gateway Service RESTful API server started on: ' + port);
+        });
+    } catch(e) {console.log(e)}
+    console.log(`Worker ${process.pid} started`);
+}
