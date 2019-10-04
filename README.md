@@ -2,4 +2,4 @@
 
 Training for nodeJS
 
-Tech Stack: NodeJS, React Native, Pivotal Cloud Foundry
+Tech Stack: NodeJS, React, Pivotal Cloud Foundry
